@@ -1,0 +1,864 @@
+@charset 'utf-8';
+body{
+  background-color: rgb(238,238,238);
+}
+.views{
+    display: block;
+    width: 100%;
+    height: 5000px;
+}
+.fix{
+    clear: both;
+    content: "";
+    display: block;
+}
+/*头*/
+header{
+	width: 100%;
+/*	height: 0.493333rem;*/
+    background-color: #FE5400;
+    position: fixed;
+    z-index: 20;
+}
+header .header-wrap {
+	width: 100%;
+    box-sizing: border-box;
+    padding-right: 0.2rem;
+    padding-left: 37px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+     background:url(../image/tao.png) no-repeat; 
+    background-repeat: no-repeat;
+    background-size: 27px 20px;
+    background-position: 4.5px center;
+}
+.header-wrap #search-placeholder {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #B52600;
+    text-align: center;
+    border-radius: 4px;
+    }
+ header .header-wrap #search-placeholder span {
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    display: inline-block;
+    color: #F0E0DC;
+}
+.top-fixed{
+	left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+}
+/*图片轮播*/
+.scroll-wrap,.scroll-content{
+	width: 100%;
+}
+#content{
+	position: relative;
+    width:10rem;
+    margin: 0 auto;
+    top: 38px;
+}
+/*第一块*/
+.sec1{
+    background-color: rgb(255,255,255);
+}
+.sec1 .swiper-container{
+    width:10rem;
+    height:3.125rem;
+}
+.sec1 .swiper-container .swiper-slide{
+    width:10rem;
+    background-size:contain;
+}
+.sec1 .swiper-container .swiper-slide img{
+    width:10rem;
+    background-size:contain;
+}
+#cate{
+	padding-top: 0.2rem;
+	padding-left:0.925926rem;
+}
+#cate ul{
+    width: 96%;
+}
+#cate ul li{
+  float: left;
+  width: 25%;
+  margin-top: 0.185185rem;
+}
+#cate img{
+    width: 1.203rem;
+    height: 1.203rem;
+}
+#cate .a{
+    display: block;
+    margin-left: 0.333333rem;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    width: 2rem;
+    height: 0.594rem;
+    line-height: 0.594rem;
+}
+/*淘宝头条*/
+#news{
+    width: 10.0rem;
+    height:1.111111rem;
+    padding-top: 0.277778rem;
+}
+#news .span1{
+    display: block;
+    float: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(232, 232, 232);
+    width: 2.1875rem;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(../image/news.png) 50% 50% / 1.61719rem 0.46875rem no-repeat;
+}
+#news .span2{   
+    display: block;
+    float: left;
+    height: 0.46875rem;
+    width:0.833333rem;
+    line-height: 0.46875rem;
+    margin:0.185185rem;
+    border: 1px solid rgb(216, 20, 33);
+    border-radius: 0.125rem;
+    color: rgb(216, 20, 33);
+    font-size: 14.0625px;
+    text-align: center;;
+}
+#news .span3{
+    display: block;
+    overflow: hidden;
+    margin: 0.125rem 0px;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: rgb(53, 53, 53);
+    font-size: 15.2344px;
+    width: 6rem;
+}
+.border{
+    width: 10rem;
+    height: 0.313rem;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+}
+/*淘抢购*/
+.sec2{
+    width:10.0rem;
+    height: 4.797rem;
+    position: relative;
+}
+.buy{
+    float: left;
+    width:40%;
+    height: 4.797rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.tu{
+    width: 4rem;
+    height: 4.813rem;
+    z-index: 1;
+    position: absolute;
+    background: url(../image/buy.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.goods{
+    float: left;
+    box-sizing: border-box;
+    line-height: 0;
+    width:60%;
+    height: 4.797rem;
+}
+.goods .top{
+    width:5.984rem;
+    height:1.922rem;
+     background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.goods .top .huo{
+    float: left;
+    width: 3.516rem;
+    height: 1.922rem;
+    background-image: url(../image/n1.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.shoes{
+    float: left;
+    width: 1.922rem;
+    height: 1.922rem;
+    background-image: url(../image/n2.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.goods .bottom{
+     width:5.984rem;
+    height: 2.875rem;
+}
+.bottom .t{
+    float: left;
+    width: 2.969rem;
+    height: 2.875rem;
+    z-index: 1;
+    background-image: url(../image/buy1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bottom .bag{
+    float: left;
+     width: 2.969rem;
+    height: 2.875rem;
+    z-index: 1;
+    background-image: url(../image/buy2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*淘实惠*/
+.sec3{
+    width: 100%;
+    overflow: hidden;
+}
+.sec3 .box{
+    width: 10rem;
+    height: 7.281rem;
+     background-color: rgba(255, 255, 255 ,0);
+}
+.bor-box{
+    width: 10rem;
+    height: 0.953rem;
+    background-color: rgb(238, 238, 238);
+}
+.bor-box .view{
+    float: left;
+    background-color: rgb(204, 204, 204);
+    margin-top: 0.484rem;
+    margin-left: 0.156rem;
+    margin-right: 0.156rem;
+    width: 3.813rem;
+    height: 1px;
+}
+.bor-box .tubiao{
+    float: left;
+    margin-top: 0.219rem;
+    width: 0.531rem;
+    height: 0.531rem;
+    background-image: url(../image/tubiao.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.bor-box .hui{
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(252, 28, 7);
+    margin-right: 0.047rem;
+    width: 1.328rem;
+    height: 0.953rem;
+    line-height: 0.953rem;
+    background-color: transparent;
+}
+.bor-box .vie{
+    float:right;
+    box-sizing: border-box;
+    line-height: 0;
+    background-color: rgb(204, 204, 204);
+    margin-top: 0.484rem;
+    margin-right: 0.156rem;
+    width: 3.813rem;
+    height: 1px;
+}
+.box .dapai{
+    width: 10rem;
+    height: 3.141rem;
+    background-color:rgb(255,255,255);
+}
+.box .bord{
+  background-color: rgb(232, 232, 232);
+    width: 10rem;
+    height: 1px;
+}
+.box .tejia{
+    width: 10rem;
+    height: 3.141rem;
+    background-color:rgb(255,255,255);
+}
+.dapai .left{
+    float: left;
+    width: 4rem;
+    height: 3.141rem;
+    background: url(../image/d1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dapai .right,.tejia .right{
+    float: left;
+     width: 6rem;
+    height: 3.141rem;
+}
+.dapai .right .left{
+     float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dapai .right .main{
+    float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dapai .right .right{
+    float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tejia .left{
+    float: left;
+    width: 4rem;
+    height: 3.141rem;
+    background: url(../image/d5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tejia .right .left{
+     float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tejia .right .main{
+     float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tejia .right .right{
+    float: left;
+     width: 1.984rem;
+    height: 3.141rem;
+    background: url(../image/d8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*品质*/
+.sec4{
+    width: 100%;
+    overflow: hidden;
+}
+.sec4 .box{
+    width: 10rem;
+    height: 7.281rem;
+    background-color: rgba(255, 255, 255 ,0);
+}
+.sec4 .bor-box .tubiao{
+    background-image: url(../image/s4.png);
+}
+.sec4 .bor-box .hui{
+    color: rgb(106, 41, 164);
+}
+.sec4 .pin_top{
+    width: 10rem;
+     height:2.609rem;
+    background-color:rgb(255,255,255); 
+}
+.sec4 .pin_bottom{
+     width: 10rem;
+     height:2.609rem;
+    background-color:rgb(255,255,255); 
+}
+.pin_top .left{
+     float: left;
+     width: 5.969rem;
+    height:2.609rem;
+    background: url(../image/s41.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_top .right{
+     float: left;
+     width: 4rem;
+    height:2.609rem;
+    background: url(../image/s42.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_bottom .s{
+    width: 1.984rem;
+    height: 3.125rem;
+}
+.pin_bottom .s1{
+     float: left;
+    background: url(../image/s43.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_bottom .s2{
+     float: left;
+    background: url(../image/s44.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_bottom .s3{
+     float: left;
+    background: url(../image/s45.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_bottom .s4{
+     float: left;
+    background: url(../image/s46.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pin_bottom .s5{
+     float: left;
+    background: url(../image/s47.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*有特色*/
+.sec5 .box{
+    width: 10rem;
+    height: 9.266rem;
+    background-color: rgba(255, 255, 255 ,0);
+}
+.sec5 .tubiao{
+   background-image: url(../image/ss.png);
+}
+.sec5 .hui{
+    color: rgb(220, 156, 8);
+}
+.sec5 .dapai,.sec5 .tejia{
+    height: 3.125rem;
+}
+.sec5 .dapai .left{
+    height: 3.125rem;
+    background: url(../image/t1.png);
+    background-size: contain;
+}
+.sec5 .dapai .right .left{
+     height: 3.125rem;
+    background: url(../image/t2.png);
+    background-size: contain;
+}
+.sec5 .dapai .right .main{
+     height: 3.125rem;
+    background: url(../image/s3.png);
+    background-size: contain;
+}
+.sec5 .dapai .right .right{
+     height: 3.125rem;
+    background: url(../image/s5.png);
+    background-size: contain;
+}
+.sec5 .tejia .left{
+    height: 3.125rem;
+    background: url(../image/z1.png);
+    background-size: contain;
+}
+.sec5 .tejia .right .left{
+     height: 3.125rem;
+    background: url(../image/z2.png);
+    background-size: contain;
+}
+.sec5 .tejia .right .main{
+     height: 3.125rem;
+    background: url(../image/z3.png);
+    background-size: contain;
+}
+.sec5 .tejia .right .right{
+     height: 3.125rem;
+    background: url(../image/z4.png);
+    background-size: contain;
+}
+.sec5 .zz{
+    width: 10rem;
+    height: 2rem;
+    background: url(../image/z5.jpg);
+    background-size: contain;
+}
+.sec6 .tubiao{
+      background-image: url(../image/m1.png);
+}
+.sec6 .hui{
+  color: rgb(72, 178, 21);
+  font-size: 16px;
+}
+.sec6 .marker01{
+    width: 10rem;
+    height: 3.844rem;
+    background-color: rgb(255,255,255);
+}
+.sec6 .marker02,.sec6 .marker03{
+     width: 10rem;
+    height: 2.875rem;
+    background-color: rgb(255,255,255);
+}
+.marker01 .left,.marker01 .right{
+    float: left;
+    width: 4.984rem;
+    height: 3.844rem;
+    position: relative;
+}
+.marker01 .title{
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    margin-left: 0.375rem;
+    padding-top: 0.37037rem;
+    width: 4.609rem;
+    height: 0.531rem;
+    line-height: 0.531rem;
+    background-color: white;
+}
+ .marker01 .dec{
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 0.313rem;
+    padding-top: 0.37037rem;
+    margin-left: 0.375rem;
+    width: 4.609rem;
+    height: 0.344rem;
+    line-height: 0.344rem;
+    background-color: white;
+}
+.marker01 .left .img{
+    width: 4.984rem;
+    height: 2.313rem;
+    background-image: url(../image/n1.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.marker01 .right .img{
+    width: 5rem;
+    height: 2.313rem;
+    background-image: url(../image/n2.gif);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.marker02 ul{
+    width:10rem;
+}
+.marker02 ul li,.marker03 ul li{
+  float: left;
+  width:2.391rem;
+}
+.marker02 .title, .marker03 .title{
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    margin-top: 0.344rem;
+    margin-left: 0.568rem;
+    width: 1.969rem;
+    height: 0.469rem;
+    line-height: 0.469rem;
+    background-color: white;
+}
+.marker02 .dec, .marker03 .dec{
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 0.031rem;
+    margin-left: 0.438rem;
+    width: 1.969rem;
+    height: 0.375rem;
+    line-height: 0.375rem;
+    background-color: white;
+}
+.marker02 .img, .marker03 .img{
+    width: 2.406rem;
+    height: 1.656rem;
+     
+}
+.img1{
+    background-image: url(../image/m3.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-image: url(../image/m4.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img3{
+    background-image: url(../image/m5.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+}
+.img4{
+    background-image: url(../image/m6.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img5{
+    background-image: url(../image/m7.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img6{
+    background-image: url(../image/m8.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img7{
+    background-image: url(../image/m9.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.img8{
+    background-image: url(../image/m10.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.sss{
+    width: 10rem;
+    height: 2rem;
+    z-index: 1;
+    background-image: url(../image/m11.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sec7 .box{
+  width: 10rem;
+  height: 0.969rem;
+  background-color: rgb(255,255,255);
+
+}
+.sec7 .box .left{
+    float: left;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    margin-left: 0.188rem;
+    width: 4.656rem;
+    height: 0.969rem;
+    line-height: 0.969rem;
+    background-color: transparent;
+}
+.sec7 .box .right{
+    float: right;
+     font-size: 16px;
+    color: rgb(34, 34, 34);
+     width: 5rem;
+    height: 0.969rem;
+    line-height: 0.969rem;
+    background-color: transparent;
+}
+.swiper-container{
+    width:10rem;
+    height:4.219rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.156rem;
+}
+.swiper-wrapper{
+    width:10rem;
+    height:100%;
+}
+.sec7 .swiper-wrapper .left,.sec7 .swiper-wrapper .right{
+    float:left;
+}
+.sec7 .swiper-wrapper .l{
+    float:left;
+    width: 3.125rem;
+    height: 3.188rem;
+    background-image: url(../image/lo1.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.sec7 .swiper-wrapper .r{
+    float:left;
+    margin-left: 0.063rem;
+    width: 1.563rem;
+    height: 3.188rem;
+}
+.sec7 .swiper-wrapper  .t{
+    width: 1.563rem;
+    height: 1.563rem;
+    background-image: url(../image/lo2.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.sec7 .swiper-wrapper .b{
+    width: 1.563rem;
+    height: 1.563rem;
+    background-image: url(../image/lo3.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.sec7 .swiper-wrapper .right{
+    margin-left: 0.063rem;
+    width: 4.938rem;
+    height: 3.781rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.sec7 .swiper-wrapper .right .l{
+      background-image: url(../image/lo4.jpg);
+}
+.sec7 .swiper-wrapper .right .t{
+     background-image: url(../image/lo5.jpg);
+}
+.sec7 .swiper-wrapper .right .b{
+     background-image: url(../image/lo6.jpg);
+}
+.sec7 .sl .l{
+    background-image: url(../image/lo7.jpg);
+}
+.sec7 .sl .right .l{
+      background-image: url(../image/lo8.jpg);
+}
+.sec7 .sl .right .t{
+     background-image: url(../image/lo9.jpg);
+}
+.sec7 .sl .right .b{
+     background-image: url(../image/lo11.jpg);
+}
+.sec7 .sll .left .l{
+    background-image: url(../image/l12.jpg);
+}
+.sec7 .sll .left .t{
+    background-image: url(../image/l13.jpg);
+}
+.sec7 .sll .left .b{
+    background-image: url(../image/l14.jpg);
+}
+.sec7 .sll .right .l{
+      background-image: url(../image/l15.jpg);
+}
+.sec7 .sll .right .t{
+     background-image: url(../image/l16.jpg);
+}
+.sec7 .sll .right .b{
+     background-image: url(../image/l18.jpg);
+}
+.sec8{
+    width:10rem;
+}
+.sec8 .box{
+    width: 10rem;
+    background-color: rgb(255,255,255);
+}
+.sec8  .hui{
+    width: 1.5rem;
+    }
+.sec8 ul{
+    width:10rem;
+}
+.sec8 ul li{
+    float:left;
+    width:4.625rem;
+    margin-right:0.3rem;
+}
+
+.sec8 .img{
+    width: 4.625rem;
+    height: 5.375rem;
+    background-color: transparent;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.sec8 .img1{
+     background-image: url(../image/c1.jpg);
+}
+.sec8 .img2{
+     background-image: url(../image/c2.jpg);
+}
+.sec8 .img3{
+     background-image: url(../image/c3.jpg);
+}
+.sec8 .img4{
+     background-image: url(../image/c4.SS2);
+}
+.sec8 .img5{
+     background-image: url(../image/c5.jpg);
+}
+.sec8 .img6{
+     background-image: url(../image/c6.jpg);
+}
+.sec8 .img7{
+     background-image: url(../image/c7.jpg);
+}
+.sec8 .img8{
+     background-image: url(../image/c8.jpg);
+}
+.sec8 .des{
+    font-size: 16px; 
+    color: rgb(102, 102, 102); 
+    margin: 0.188rem 0.313rem; 
+    width: 4rem;
+    background-color: transparent;
+}
+.sec8 .price{
+    color: rgb(255, 80, 0);
+    background-color: transparent;
+    margin-bottom: 0.031rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    width: 2.25rem;
+    height: 0.844rem;
+    line-height: 0.844rem;
+}
+footer{
+	border-top: 1px solid #E7E7E7;
+	margin-top:30px;
+    padding-bottom: 10px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+    z-index: 20;
+    height:38px;
+    background-color:#fff;
+}
+footer ul{
+    width:100%;
+    margin-left:150px;
+}
+footer ul li{
+    float:left;
+    width:20%;
+
+}
+footer .iconfont{
+	font-size:24px;
+	color:#333;
+}
+footer span{
+	display:block;
+	color:#333;
+}
